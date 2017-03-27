@@ -1,0 +1,261 @@
+/*Nav header background color*/
+#nav-head{
+    background-color: #488009
+}
+
+/*Logo*/
+#logo-img{
+    background: url('../AyImages/AyLogo.png') no-repeat;
+    width:142px;
+    height: 70px;
+    border: 2px solid firebrick
+}
+
+/*navbrand text decoration*/
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+
+.navbar-brand h1{
+    color:firebrick
+}
+
+#nav-list li a{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*Menu and Special Tiles*/
+
+#menu-tile{
+    background: url('../AyImages/chicken.png') no-repeat;
+    background-position: center;
+}
+
+#specials-tile{
+    background: url('../AyImages/burger-350.png') no-repeat;
+    background-position: center;    
+}
+
+#menu-tile, #specials-tile, #map-tile{
+    height: 250px;
+    width: 100%;
+    position: relative;
+    border: 2px solid firebrick;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+    box-shadow: 0 1px 5px 1px #3F0c1F;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 1.6em;
+    background-color: #000;
+    color: #fff;
+    opacity: .7;
+}
+
+/*Footer*/
+.panel-footer{
+    margin-top: 30px;
+    background-color: #222;
+    color: #fff;
+}
+
+.panel-footer div.row{
+    margin-bottom: 35px;    
+}
+
+#copyright{
+    text-align: center;
+}
+
+#hours, #address{
+    line-height: 2;
+}
+#hours > span, #address > span{
+    font-size: 1.3em;
+}
+
+/*MENU PAGE*/
+#menu-title > h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.imgclass{
+    margin-bottom: 10px;
+    border-radius: 4px;
+    position: relative;
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+}
+
+#imgSpan{
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    width: 250px;
+    background-color: #488009;
+    color: #fff;
+    opacity: .8;
+}
+/*#imgSpan{
+    margin-bottom: 10px;
+    border-radius: 4px;
+    position: relative;
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+}*/
+/*#imgSpan span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    opacity: .7;
+}*/
+
+
+.imgclass:hover{
+    box-shadow: 0 1px 5px 1px firebrick;
+}
+
+/*MEDIA QUERIES*/
+
+/*Large Device*/
+@media(min-width: 1200px){
+    #logo-img{
+    background: url('../AyImages/AyLogo.png') no-repeat;
+    width:142px;
+    height: 70px;
+    border: 2px solid firebrick
+    }
+
+    .jumbotron{
+        background: url('../AyImages/jumbotron_1200.jpg') no-repeat;
+        height: 675px;
+        border: 1px solid firebrick
+    }
+}
+
+/*Medium Devices: Tablets*/
+@media(min-width: 992px) and (max-width: 1199px){
+    #logo-img{
+        background: url('../AyImages/AyLogo.png') no-repeat;
+        width: 142px;
+        height: 70px;
+        /*margin: 10px 7px 5px 0px;*/
+    }
+
+    .jumbotron{
+        background: url('../AyImages/jumbotron_992.jpg') no-repeat;
+        height: 558px;
+        border: 1px solid firebrick;
+    }
+
+}
+
+/*Small Devices: Smart Phones*/
+@media(min-width: 768px) and (max-width: 991px){
+    #logo-img{
+        background: url('../AyImages/AyLogo.png') no-repeat;
+        width: 142px;
+        height: 70px;
+    }
+    .jumbotron{
+        background: url('../AyImages/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+        border: 1px solid firebrick;
+    }
+    #nav-list{
+        padding-top: 0px;
+        text-shadow: 1px 1px 1px #fff;
+    }
+   #nav-list li a{
+        font-size: 20px;
+        font-weight: lighter;
+    }
+    #menu-tile, #specials-tile{
+        margin: 0 auto 15px;
+    }
+
+}
+
+/*Extra Small Devices*/
+@media(max-width: 767px){
+    #logo-img{
+        background: url('../AyImages/AyLogo.png') no-repeat;
+        width: 142px;
+        height: 70px;
+        margin-left: 15px;
+    }
+    .navbar-header button.navbar-toggle{
+        border: 1px, thin #557c3e;
+        margin-top: 1.5em;
+    }
+    div.jumbotron{
+        border: 2px solid firebrick;
+        border-radius: 6px;
+        padding-top:0;
+        padding-bottom: 0;
+    }
+    #nav-list{
+        padding-top: 0px;
+        text-shadow: 1px 1px 1px #fff;
+    }
+    #nav-list li a{
+        font-size: 20px;
+        font-weight: lighter;
+        text-align: center;
+    }
+    #nav-list li a:hover{
+         background-color: rgb(117, 35, 12);
+    }
+     #menu-tile, #specials-tile{
+        width: 360px;
+        margin: 0 auto 15px;
+    }
+    hr.reduce-50{
+        width: 50%;
+    }
+
+    section {
+        text-align: center;
+    }
+
+    /*.jumbotron{
+        background: url('../AyImages/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+        border: 1px solid firebrick;
+    }*/
+}
+
+@media(max-width: 479px){
+    #nav-list li a{
+        font-size: 15px;
+        font-weight: lighter;
+    }
+    #menu-tile, #specials-tile{
+        width: 280px;
+        margin: 0 auto 15px;
+    }
+    #logoimg{
+        width:50%;
+        height: 50%;
+    }
+
+}
